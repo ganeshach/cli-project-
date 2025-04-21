@@ -15,6 +15,7 @@ import csv
 # git commit -m "Your message"
 # copy paste git code from github 
 
+# 80 - 90% kaam yehi nai ho 
 ## after making changes in the project:
 # 1. change the code. 
 # 2. git add . 
@@ -23,14 +24,6 @@ import csv
 
 
 
-
-
-def create_connection():
-    try: # sometimes there might be problem while connecting so we have used try.. exception 
-        con = sqlite3.connect("users.sqlite3")  
-        return con 
-    except Exception as e: 
-        print(e)
 
 INPUT_STRING = """
 Enter the option: 
@@ -45,6 +38,17 @@ Enter the option:
     9. UPDATE user 
     10. Press any key to EXIT
     """
+
+
+
+def create_connection():
+    try: # sometimes there might be problem while connecting so we have used try.. exception 
+        con = sqlite3.connect("users.sqlite3")  
+        return con 
+    except Exception as e: 
+        print(e)
+
+
 
 def create_table(con):
     CREATE_USERS_TABLE_QUERY = """
