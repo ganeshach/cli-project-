@@ -1,6 +1,30 @@
 import sqlite3
 import csv
 
+
+## first time configuring your git :
+# go to git bash 
+# git config -- global user.name "Ganesh Acharya"
+# git config -- global user.email "ganeshacharya010@gmail.com"
+
+## First time working in the project 
+# git init => git initialize 
+# git status => if you want to check what are the status of the files 
+# git diff => if you want to check what are the changes 
+# git add .  => Track all the files
+# git commit -m "Your message"
+# copy paste git code from github 
+
+## after making changes in the project:
+# 1. change the code. 
+# 2. git add . 
+# 3. git commit -m "Your message"
+# 4. git push 
+
+
+
+
+
 def create_connection():
     try: # sometimes there might be problem while connecting so we have used try.. exception 
         con = sqlite3.connect("users.sqlite3")  
